@@ -153,7 +153,7 @@ export default function CallToAction() {
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.19 11.19 0 003.48.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.19 11.19 0 00.56 3.48 1 1 0 01-.21 1.11l-2.2 2.2z"/>
                     </svg>
-                    <span>+91 98765 43210</span>
+                    <span>+91 96688 21100</span>
                   </button>
 
                   <button className="group border-2 border-yellow-600 text-yellow-700 px-6 py-3 rounded-xl text-sm font-medium tracking-wide hover:bg-yellow-600 hover:text-white transition-all duration-300 flex items-center justify-center space-x-2">
