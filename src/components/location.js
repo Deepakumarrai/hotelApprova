@@ -33,9 +33,9 @@ export default function Location() {
       setCurrentSlide((prev) => (prev + 1) % bedImages.length)
     }, 4000)
     return () => clearInterval(timer)
-  }, [])
+  }, [])  
   return (
-    <section className="py-32 bg-gradient-to-br from-stone-50 via-white to-stone-100 relative overflow-hidden">
+    <section id="location-section" className="py-32 bg-gradient-to-br from-stone-50 via-white to-stone-100 relative overflow-hidden">
       {/* Royal Background Pattern */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-[#ad8b3a]/8 to-yellow-500/4 rounded-full blur-3xl animate-pulse"></div>
