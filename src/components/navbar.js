@@ -73,17 +73,9 @@ export default function Navbar() {
                     </Link>
                   </div>
                 </div>
-              </div>
-
-              <button 
-                onClick={() => {
-                  const element = document.getElementById('about-section');
-                  element?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="text-white/90 hover:text-[#ad8b3a] text-sm font-medium uppercase tracking-widest transition-all duration-300 py-2 border-b-2 border-transparent hover:border-[#ad8b3a]"
-              >
+              </div>              <Link href="/about-us" className="text-white/90 hover:text-[#ad8b3a] text-sm font-medium uppercase tracking-widest transition-all duration-300 py-2 border-b-2 border-transparent hover:border-[#ad8b3a]">
                 ABOUT US
-              </button>
+              </Link>
 
               <button 
                 onClick={() => {
@@ -137,17 +129,13 @@ export default function Navbar() {
                 Sky-Deck Experience
               </Link>
             </div>
-            
-            <button 
-              onClick={() => {
-                setIsOpen(false);
-                const element = document.getElementById('about-section');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="block text-white/90 hover:text-[#ad8b3a] text-lg font-medium uppercase tracking-wider transition-all duration-300 pb-2 border-b border-white/10 w-full text-left"
+              <Link 
+              href="/about-us" 
+              onClick={() => setIsOpen(false)}
+              className="block text-white/90 hover:text-[#ad8b3a] text-lg font-medium uppercase tracking-wider transition-all duration-300 pb-2 border-b border-white/10"
             >
               ABOUT US
-            </button>
+            </Link>
             
             <button 
               onClick={() => {
