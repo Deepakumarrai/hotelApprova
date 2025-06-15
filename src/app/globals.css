@@ -17,3 +17,61 @@
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
 }
+
+/* Custom Scrollbar Styles - Matching Website Theme */
+@layer base {
+  /* Webkit Scrollbar Styles (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f8fafc;
+    border-radius: 6px;
+    border: 1px solid #f1f5f9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ad8b3a, #d97706);
+    border-radius: 6px;
+    border: 2px solid #f8fafc;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #8a6e2f, #b45309);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(173, 139, 58, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(135deg, #6b5423, #92400e);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #f8fafc;
+  }
+
+  /* Firefox Scrollbar Styles */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #ad8b3a #f8fafc;
+  }
+
+  /* Custom Scrollbar for Dark Sections */
+  .dark-scrollbar::-webkit-scrollbar-track {
+    background: #1f2937;
+    border: 1px solid #374151;
+  }
+
+  .dark-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ad8b3a, #f59e0b);
+    border: 2px solid #1f2937;
+  }
+
+  .dark-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #d97706, #fbbf24);
+    box-shadow: 0 4px 8px rgba(251, 191, 36, 0.3);
+  }
+}
