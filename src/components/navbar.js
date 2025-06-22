@@ -115,8 +115,13 @@ export default function Navbar() {
                       Sky-Deck Experience
                     </Link>
                   </div>
-                </div>
-              </div>              <Link href="/about-us" className="text-white/90 hover:text-[#ad8b3a] text-sm font-medium uppercase tracking-widest transition-all duration-300 py-2 border-b-2 border-transparent hover:border-[#ad8b3a]">
+                </div>              </div>
+
+              <Link href="/farmhouse" className="text-white/90 hover:text-[#ad8b3a] text-sm font-medium uppercase tracking-widest transition-all duration-300 py-2 border-b-2 border-transparent hover:border-[#ad8b3a]">
+                FARMHOUSE
+              </Link>
+
+              <Link href="/about-us" className="text-white/90 hover:text-[#ad8b3a] text-sm font-medium uppercase tracking-widest transition-all duration-300 py-2 border-b-2 border-transparent hover:border-[#ad8b3a]">
                 ABOUT US
               </Link>
 
@@ -170,9 +175,17 @@ export default function Navbar() {
                 className="block text-white/80 hover:text-[#ad8b3a] pl-4 transition-all duration-300"
               >
                 Sky-Deck Experience
-              </Link>
-            </div>
-              <Link 
+              </Link>            </div>
+
+            <Link 
+              href="/farmhouse" 
+              onClick={() => setIsOpen(false)}
+              className="block text-white/90 hover:text-[#ad8b3a] text-lg font-medium uppercase tracking-wider transition-all duration-300 pb-2 border-b border-white/10"
+            >
+              FARMHOUSE
+            </Link>
+
+            <Link 
               href="/about-us" 
               onClick={() => setIsOpen(false)}
               className="block text-white/90 hover:text-[#ad8b3a] text-lg font-medium uppercase tracking-wider transition-all duration-300 pb-2 border-b border-white/10"

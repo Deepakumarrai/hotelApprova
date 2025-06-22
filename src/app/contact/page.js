@@ -83,10 +83,9 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 text-center">Email</h3>
-              <div className="text-center">
-                <p className="text-gray-600 mb-2">Send us a message</p>
-                <a href="mailto:info@apoorvaroyale.com" className="text-[#ad8b3a] hover:text-gray-900 transition-all duration-300 font-semibold">
-                  info@apoorvaroyale.com
+              <div className="text-center">                <p className="text-gray-600 mb-2">Send us a message</p>
+                <a href="mailto:Contact@apoorvaroyale.com" className="text-[#ad8b3a] hover:text-gray-900 transition-all duration-300 font-semibold">
+                  Contact@apoorvaroyale.com
                 </a>
               </div>
             </div>

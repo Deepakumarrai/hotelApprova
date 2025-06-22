@@ -58,8 +58,8 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-[#ad8b3a] mb-6 uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Home</Link></li>
-              <li><Link href="/about" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">About Us</Link></li>
-              <li><Link href="/rooms" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Rooms & Accommodation</Link></li>
+              <li><Link href="/about" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">About Us</Link></li>              <li><Link href="/rooms" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Rooms & Accommodation</Link></li>
+              <li><Link href="/farmhouse" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Farmhouse</Link></li>
               <li><Link href="/sky-deck" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Sky-Deck</Link></li>
               <li><Link href="/restaurant" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">The Cupid Restaurant</Link></li>
               <li><Link href="/offers" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">Special Offers</Link></li>
@@ -112,11 +112,12 @@ export default function Footer() {
                 >                  WhatsApp Booking
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <svg className="w-5 h-5 text-[#ad8b3a] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center space-x-3">                <svg className="w-5 h-5 text-[#ad8b3a] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
-                <p className="text-stone-300">info@apoorvaroyale.com</p>
+                <a href="mailto:Contact@apoorvaroyale.com" className="text-stone-300 hover:text-[#ad8b3a] transition-colors duration-300">
+                  Contact@apoorvaroyale.com
+                </a>
               </div>
             </div>
           </div>
