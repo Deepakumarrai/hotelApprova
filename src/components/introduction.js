@@ -23,7 +23,52 @@ export default function Introduction() {
             Nestled in the vibrant heart of Balangir, our hotel blends modern luxury with authentic local charm. 
             Whether you're here for a business trip, a family getaway, or a special celebration, 
             discover the warmth, elegance, and flavors that set us apart.
-          </p>
+          </p>        </div>
+        
+        {/* Featured Hotel Video Section */}
+        <div className="mb-16 md:mb-20">
+          <div className="group relative max-w-5xl mx-auto">
+            <div className="absolute -inset-2 bg-gradient-to-r from-[#ad8b3a] via-amber-400 to-[#ad8b3a] rounded-3xl blur-lg opacity-40 group-hover:opacity-70 transition duration-700"></div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-700 bg-black border-4 border-white/30 backdrop-blur-sm">
+              <video 
+                className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover transition-all duration-700 group-hover:scale-105"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/assets/hotel-main.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              
+              {/* Video Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ad8b3a]/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-700"></div>
+              
+              {/* Live Indicator */}
+              <div className="absolute top-6 right-6 flex items-center space-x-3">
+                <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse shadow-xl"></div>
+                <div className="px-4 py-2 bg-black/60 backdrop-blur-md rounded-full text-white text-sm font-semibold border border-white/30 shadow-lg">
+                  🔴 LIVE
+                </div>
+              </div>
+              
+              {/* Quality Badge */}
+              <div className="absolute top-6 left-6">
+                <div className="px-4 py-2 bg-black/60 backdrop-blur-md rounded-full text-white text-sm font-semibold border border-white/30 shadow-lg">
+                  4K HD
+                </div>
+              </div>
+  
+              
+              {/* Floating Elements */}
+              <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-1/4 left-12 w-2 h-2 bg-white/50 rounded-full animate-ping"></div>
+                <div className="absolute top-1/3 right-16 w-3 h-3 bg-[#ad8b3a]/70 rounded-full animate-pulse"></div>
+                <div className="absolute bottom-1/4 left-20 w-2 h-2 bg-amber-400/60 rounded-full animate-bounce"></div>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* Video Gallery Section */}
